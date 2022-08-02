@@ -8,6 +8,6 @@ Currently uploaded couple of notes but will be updated more soon..
 ## Check box
 
 - [X] Markdown File
-- [] Data Structure & Algorithm
-- [] gRPC (Proto3)
-- [] Flutter
+- [ ] Data Structure & Algorithm
+- [ ] gRPC (Proto3)
+- [ ] Flutter
