@@ -9,5 +9,6 @@ Currently uploaded couple of notes but will be updated more soon..
 
 - [X] Markdown File
 - [ ] Data Structure & Algorithm
-- [ ] gRPC (Proto3)
+- [X] gRPC (Proto3)
 - [ ] Flutter
+- [X] Docker
