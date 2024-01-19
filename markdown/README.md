@@ -1,29 +1,36 @@
 # Introduction
-This markdown shows quick commands and tips of MARKDOWN.
 
+This is markdown cheat sheet for those who need a remind markdown commands and learn tips of MARKDOWN.
 # Help
 
 Click Raw to see the script.
 # Script
-Use three backquote mark and write language to create the script. 
+
+Use three backquotes mark and write language to create the script. 
 ```bash
 python server.py
 ```
-
+If you write programming language next to the first three backquotes, you can apply the corresponding theme. 
 ```python
 import sys
 print('hello world')
 ```
+## Hyperlink
+
+To create a hyperlink, employ square brackets and parentheses. Within the square brackets, specify the desired displayed text, and inside the parentheses, include the website link.
 [This is the link](https://www.youtube.com)
+[You can modify this](https://www.google.com.au/)
+
+You can also link another markdown file by specified path from the current markdown.  
+[Upper README file](../README.md)
+
 
 # Checkbox List
 
 **preview is only valid in github**
-- [x] grpc server-client
 
-- [X] server.py
-
-- [ ] Checkbox2
+- [x] Checkbox 1
+- [ ] Checkbox 2
 
 # Table
 
