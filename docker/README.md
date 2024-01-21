@@ -1,6 +1,26 @@
 # About
 
-# Cmd
+
+## Contents
+
+I have included necessary concepts you need to know for Docker.
+
+```bash
+docker images
+docker pull
+docker ps
+docker logs
+docker run
+docker start
+docker exec
+docker stop
+docker rm
+docker tag
+docker build
+docker push
+```
+[도커 팁](https://velog.io/@juunini/%EC%8B%A4%EB%AC%B4%EC%97%90%EC%84%9C-%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%8A%94-%EC%97%AC%EA%B8%B0%EA%B9%8C%EC%A7%80%EB%A7%8C-%EC%95%8C%EB%A9%B4-%EB%90%98%EB%8A%94-%EB%8F%84%EC%BB%A4-%EC%BF%A0%EB%B2%84%EB%84%A4%ED%8B%B0%EC%8A%A4)
+# Commands
 "list image"
 docker images
 
