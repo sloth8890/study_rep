@@ -83,3 +83,6 @@ Output would be like
 [1, 10, 10, 10, 10, 6, 7, 8, 9]
 ```
 
+## LinkedList and Queue
+
+#TODO 
