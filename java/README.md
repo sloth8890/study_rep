@@ -85,4 +85,89 @@ Output would be like
 
 ## LinkedList and Queue
 
-#TODO 
+To implement BFS, DFS and other algorithms, Queue/LinkedList data structures are strongly recommended to traverse the nodes.
+
+
+- Basic usage of LinkedList and Queue. 
+```java
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class QueueAndLinkedListExample {
+
+    public static void main(String[] args) {
+        // Create a linked list
+        LinkedList<String> linkedList = new LinkedList<>();
+
+        // Add elements to the linked list
+        linkedList.add("Apple");
+        linkedList.add("Banana");
+        linkedList.add("Orange");
+
+        // Display the linked list
+        System.out.println("Linked List: " + linkedList);
+
+        // Create a queue using the linked list
+        Queue<String> queue = new LinkedList<>(linkedList);
+
+        // Enqueue (add) elements to the queue
+        queue.offer("Grapes");
+        queue.offer("Pineapple");
+
+        // Display the elements in the queue
+        System.out.println("Queue: " + queue);
+
+        // Dequeue (remove) elements from the queue
+        String removedElement = queue.poll();
+        System.out.println("Dequeued Element: " + removedElement);
+
+        // Display the updated queue
+        System.out.println("Updated Queue: " + queue);
+    }
+}
+```
+- Practical usage in BFS question
+```java
+/**
+* Definition for a binary tree node.
+* public class TreeNode {
+	* int val;
+	* TreeNode left;
+	* TreeNode right;
+	* TreeNode() {}
+	* TreeNode(int val) { this.val = val; }
+	* TreeNode(int val, TreeNode left, TreeNode right) {
+		* this.val = val;
+		* this.left = left;
+		* this.right = right;
+		* }
+	* }
+*/
+**class** Solution {
+public List<List<Integer>> levelOrder(TreeNode root) {
+	List<List<Integer>> collecs = new ArrayList<>();
+	if (root == null) {
+		return collecs;
+	}
+	Queue<TreeNode> q = new LinkedList<>();
+	q.add(root);
+	while (q.size() != 0) {
+		int qSize = q.size();
+		List<Integer> newL = new ArrayList<>();
+		for(int i = 0; i < qSize; i++) {
+			TreeNode cur = q.remove();
+			newL.add(cur.val);
+			
+			if (cur.left != null) {
+				q.add(cur.left);
+			}
+			if (cur.right != null) {
+				q.add(cur.right);
+			}
+		}
+		collecs.add(newL);
+	}
+	return collecs;
+	}
+}
+```
