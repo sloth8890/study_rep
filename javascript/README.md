@@ -13,3 +13,19 @@ Understanding JavaScript scope is fundamental to writing effective and bug-free 
     - Variables declared with `let` and `const` have block scope.
     - Limited to the block of code (enclosed by curly braces `{}`) where the variable is defined.
     - Provides more fine-grained control over variable visibility.
+
+## Variable Declaration
+
+1. `var`
+```js
+var global_greeting = "hey hi";
+
+function newFunction() {
+    var hello = "hello";
+}
+console.log(hello); // error: hello is not defined
+```
+2. `let`
+
+3. `const`
+
