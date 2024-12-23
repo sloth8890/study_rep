@@ -27,13 +27,23 @@ Understanding these methods is essential for building **web applications** and *
 
 ## Routing
 
+Routing in web development refers to the mechanism of directing users to different pages or resources based on the URL they request. It's a fundamental concept that determines how an application responds to client requests at different endpoints (URLs).
 
+### Basic Concepts
 
-## Call-back functions
+1. **URL Pattern Matching**: Routes match URL patterns to specific handlers or controllers
+2. **Parameters**: Routes can include dynamic parameters (e.g., /users/:id)
+3. **Query Strings**: Additional data can be passed through query parameters (e.g., ?sort=asc)
+
+### Example Routes
+
+- `/users` - Get all users
+- `/users/:id` - Get a specific user by ID
+- `/users/:id/posts` - Get all posts for a specific user
+- `/posts?sort=asc` - Get all posts sorted by creation date in ascending order
 
 
 ## References
 - [Background](https://doozi316.github.io/web/2019/05/15/WEB2/)
 - [Web Server vs WAS](https://gmlwjd9405.github.io/2018/10/27/webserver-vs-was.html#google_vignette)
 - [DNS](https://aws.amazon.com/route53/what-is-dns/)
-- []()
