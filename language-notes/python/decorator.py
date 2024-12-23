@@ -1,22 +1,11 @@
-# from ast import parse
-# import grpc
-# import proto_sample_pb2, proto_sample_pb2_grpc
-# from concurrent import futures
+import time
 
-# import os
-# import cv2
-# import numpy as np
-# import argparse
 
-# from datetime import datetime
-# from pytz import timezone
-# import logging
-
-# [1] decorator 
 '''
+    Function that takes a function as an argument and returns a function
     함수를 인자로 받아서, 함수를 리턴하는 기능
 '''
-import time
+
 def wrapper(func):
     def inner(*args, **kwargs):
         start = time.perf_counter()
@@ -25,7 +14,7 @@ def wrapper(func):
 
         finish = time.perf_counter()
         print('Tile elpased: {}'.format(finish-start))
-        return ret
+        return ret  
     return inner
 
 
